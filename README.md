@@ -68,3 +68,4 @@ __pycache__/
 *.db
 .env
 
+<img width="1074" height="732" alt="image" src="https://github.com/user-attachments/assets/6e70a79d-dcdd-45d5-b9ea-18688ae5ae66" />
