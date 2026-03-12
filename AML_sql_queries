@@ -1,0 +1,43 @@
+-- High Risk Transactions
+SELECT TXN_ID, Name, Amount, TXN_Type, Risk_Score, Risk_Reasons
+FROM transactions
+WHERE Risk_Level = 'HIGH'
+ORDER BY Risk_Score DESC;
+
+-- Structuring Detection
+(49k se kam cash deposits — baar baar same customer)
+SELECT Customer_ID, Name, COUNT(*) as Total_Deposits, SUM(Amount) as Total_Amount
+FROM transactions
+WHERE TXN_Type = 'Cash Deposit' AND Amount BETWEEN 40000 AND 50000
+GROUP BY Customer_ID
+HAVING COUNT(*) > 1
+ORDER BY Total_Deposits DESC;
+
+-- High Risk Country Transactions
+SELECT TXN_ID, Name, Amount, Country, TXN_Type, Risk_Reasons
+FROM transactions
+WHERE Country IN ('UAE', 'Russia', 'Cayman Islands', 'Panama', 'Nigeria')
+ORDER BY Amount DESC;
+
+-- PEP Customers ki saari transactions
+SELECT TXN_ID, Name, Amount, TXN_Type, Risk_Score, Risk_Level, Category
+FROM transactions
+WHERE Category = 'PEP'
+ORDER BY Amount DESC;
+
+-- KYC Incomplete customers
+SELECT DISTINCT Name, Account_No, Category, Country, KYC_Status
+FROM transactions
+WHERE KYC_Status IN ('Pending', 'Incomplete');
+
+-- Large Transactions 
+SELECT TXN_ID, Name, Amount, TXN_Type, Channel, Risk_Level
+FROM transactions
+WHERE Amount >= 1000000
+ORDER BY Amount DESC;
+
+-- Risk Level Summary
+SELECT Risk_Level, COUNT(*) as Total_Transactions, SUM(Amount) as Total_Amount, AVG(Risk_Score) as Avg_Risk_Score
+FROM transactions
+GROUP BY Risk_Level
+ORDER BY Avg_Risk_Score DESC;

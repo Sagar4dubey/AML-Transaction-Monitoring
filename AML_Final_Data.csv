@@ -1,0 +1,16 @@
+TXN_ID,Date,Customer_ID,Amount,TXN_Type,Location,Counterparty,Channel,Notes,Name,Account_No,Category,Country,KYC_Status,Unnamed: 6,Unnamed: 7,Risk_Score,Risk_Reasons,Risk_Level,Alert
+TXN001,01-03-2025,C001,49000,Cash Deposit,Mumbai,SELF,Branch,-,Rahul Sharma,ACC1001,RETAIL,India,Complete,,,35,Structuring Suspected,MEDIUM,YES
+TXN002,01-03-2025,C001,48500,Cash Deposit,Mumbai,SELF,Branch,-,Rahul Sharma,ACC1001,RETAIL,India,Complete,,,35,Structuring Suspected,MEDIUM,YES
+TXN003,02-03-2025,C005,500000,Wire Transfer,Delhi,ACC9090,Online,-,Rajiv Malhotra,ACC1005,PEP,India,Complete,,,70,"PEP Customer, Large Wire Transfer",HIGH,YES
+TXN004,02-03-2025,C006,1200000,RTGS,Mumbai,ACC8080,Online,-,XYZ Global Ltd,ACC1006,HNI,Cayman Islands,Incomplete,,,65,"High Risk Country, KYC Incomplete, Very Large Amount",HIGH,YES
+TXN005,03-03-2025,C002,95000,Cash Deposit,Pune,SELF,Branch,-,Priya Enterprises,ACC1002,CASH_BIZ,India,Complete,,,0,None,LOW,NO
+TXN006,03-03-2025,C003,750000,Wire Transfer,Dubai,ACC7070,Online,-,Ahmed Al-Farsi,ACC1003,NRI,UAE,Pending,,,75,"Large Wire Transfer, High Risk Country, KYC Incomplete",HIGH,YES
+TXN007,04-03-2025,C007,48000,Cash Deposit,Chennai,SELF,Branch,-,Meena Traders,ACC1007,CASH_BIZ,India,Complete,,,35,Structuring Suspected,MEDIUM,YES
+TXN008,04-03-2025,C007,47500,Cash Deposit,Chennai,SELF,Branch,-,Meena Traders,ACC1007,CASH_BIZ,India,Complete,,,35,Structuring Suspected,MEDIUM,YES
+TXN009,05-03-2025,C008,2000000,Wire Transfer,Moscow,ACC6060,Online,-,Boris Petrov,ACC1008,PEP,Russia,Pending,,a,135,"PEP Customer, Large Wire Transfer, High Risk Country, KYC Incomplete, Very Large Amount",HIGH,YES
+TXN010,05-03-2025,C004,1000,ATM,Delhi,SELF,ATM,-,Sunita Devi,ACC1004,RETAIL,India,Complete,,,0,None,LOW,NO
+TXN011,06-03-2025,C001,49500,Cash Deposit,Mumbai,SELF,Branch,-,Rahul Sharma,ACC1001,RETAIL,India,Complete,,,35,Structuring Suspected,MEDIUM,YES
+TXN012,06-03-2025,C005,900000,RTGS,Delhi,ACC5050,Online,-,Rajiv Malhotra,ACC1005,PEP,India,Complete,,,40,PEP Customer,MEDIUM,YES
+TXN013,07-03-2025,C006,3000000,Wire Transfer,Cayman,ACC4040,Online,-,XYZ Global Ltd,ACC1006,HNI,Cayman Islands,Incomplete,,,95,"Large Wire Transfer, High Risk Country, KYC Incomplete, Very Large Amount",HIGH,YES
+TXN014,07-03-2025,C002,85000,Cash Deposit,Pune,SELF,Branch,-,Priya Enterprises,ACC1002,CASH_BIZ,India,Complete,,,0,None,LOW,NO
+TXN015,08-03-2025,C003,1100000,Wire Transfer,Abu Dhabi,ACC3030,Online,-,Ahmed Al-Farsi,ACC1003,NRI,UAE,Pending,,,95,"Large Wire Transfer, High Risk Country, KYC Incomplete, Very Large Amount",HIGH,YES
